@@ -33,19 +33,19 @@ const LandingPage = () => {
         <div className="container d-flex justify-content-between align-items-center">
           {/* Logo */}
           <div className="d-flex align-items-center">
-            <SiBookstack className="text-white fs-3 me-2" />
+            <SiBookstack className="text-primary fs-3 me-2" />
             <h1 className="h4 mb-0">BookTrack</h1>
           </div>
 
           {/* Navigation */}
-          <nav className="d-flex gap-3">
-            <a href="#home" className="text-white text-decoration-none">
+          <nav className="d-flex gap-4">
+            <a href="#home" className="text-white text-decoration-none px-3 fs-5 py-2">
               Home
             </a>
-            <a href="#features" className="text-white text-decoration-none">
+            <a href="#features" className="text-white text-decoration-none px-3 fs-5 py-2">
               Features
             </a>
-            <a href="#contact" className="text-white text-decoration-none">
+            <a href="#contact" className="text-white text-decoration-none px-3 fs-5 py-2">
               Contact
             </a>
           </nav>
@@ -65,7 +65,7 @@ const LandingPage = () => {
             height: "100vh",
           }}
         >
-          <div className="bg-dark bg-opacity-75 p-5 rounded">
+          <div className="bg-dark bg-opacity-75 p-4 rounded mt-5">
             <h2 className="display-4 fw-bold mb-4">Welcome to BookTrack</h2>
             <p className="lead mb-4">Manage your library, bookstore, or collection effortlessly.</p>
             <div className="dropdown">
@@ -108,9 +108,9 @@ const LandingPage = () => {
 
         {/* Features Section */}
         <section id="features" className="py-5 bg-light text-center">
-          <div className="container">
+          <div className="container my-5 pb-5">
             <h2 className="mb-5">Our Key Features</h2>
-            <div className="row g-4">
+            <div className="row g-6">
               <div className="col-md-4">
                 <div className="card shadow-sm feature-card">
                   <div className="card-body">
@@ -127,7 +127,7 @@ const LandingPage = () => {
                 </div>
               </div>
               <div className="col-md-4">
-                <div className="card shadow-sm feature-card">
+                <div className="card shadow-md feature-card">
                   <div className="card-body">
                     <h5 className="card-title text-success">Detailed Reporting</h5>
                     <p className="card-text">
