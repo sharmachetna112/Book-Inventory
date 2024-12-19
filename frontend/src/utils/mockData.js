@@ -22,6 +22,15 @@ export const getRandomAuthors = () =>
     lastName: `AuthorLast${i + 1}`,
   }));
 
+  // Generate random users
+export const getRandomUsers = () =>
+  Array.from({ length: Math.floor(Math.random() * 5) + 3 }, (_, i) => ({
+    id: i + 1,
+    firstName: `UserFirst${i + 1}`,
+    lastName: `UserLast${i + 1}`,
+    email: `user${i + 1}@example.com`,
+  }));
+
 // Generate random inventory
 export const getRandomInventory = () =>
   Array.from({ length: Math.floor(Math.random() * 5) + 3 }, (_, i) => ({
