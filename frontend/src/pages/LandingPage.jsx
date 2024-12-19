@@ -18,13 +18,17 @@ const LandingPage = () => {
     return () => document.removeEventListener("click", closeDropdown);
   }, []);
 
-  const handleLogin = (role) => {
-    if (role === "Admin") {
-      navigate("/admin-login");
-    } else {
-      navigate("/user-login");
-    }
-  };
+  // const handleLogin = (role) => {
+  //   if (role === "Admin") {
+  //     navigate("/admin-login");
+  //   } else {
+  //     navigate("/user-login");
+  //   }
+  // };
+
+  const handleLogin = () => {
+    navigate("/login");
+  }
 
   return (
     <div className="d-flex flex-column min-vh-100">
@@ -70,16 +74,17 @@ const LandingPage = () => {
             <p className="lead mb-4">Manage your library, bookstore, or collection effortlessly.</p>
             <div className="dropdown">
               <button
-                className="btn btn-primary dropdown-toggle"
+                className="btn btn-primary"
                 type="button"
                 id="dropdownMenuButton"
-                data-bs-toggle="dropdown"
-                aria-expanded={showDropdown}
-                onClick={() => setShowDropdown(!showDropdown)}
+                // data-bs-toggle="dropdown"
+                // aria-expanded={showDropdown}
+                // onClick={() => setShowDropdown(!showDropdown)}
+                onClick={() => handleLogin()}
               >
                 Login
               </button>
-              <ul
+              {/* <ul
                 className={`dropdown-menu${showDropdown ? " show" : ""}`}
                 aria-labelledby="dropdownMenuButton"
               >
@@ -101,7 +106,7 @@ const LandingPage = () => {
                     User Login
                   </a>
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </div>
         </section>

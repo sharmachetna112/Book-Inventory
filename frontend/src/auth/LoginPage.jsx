@@ -1,5 +1,6 @@
 // src/pages/LoginPage.jsx
 import React, { useState } from "react";
+import axios from 'axios'
 import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
@@ -10,12 +11,23 @@ const LoginPage = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (role === "Admin") {
-      navigate("/admin-dashboard");
+    if (role === "Admin" && email == "admin@me.com" && password == 123) {
+      navigate("/admin-login");
+    } else if (role === "User" && email == "user@me.com" && password == 123) {
+      navigate("/user-login");
     } else {
-      navigate("/user-dashboard");
+      alert("Invalid login credentials");
     }
   };
+
+  // const handleLogin = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     const response = await axios.post("http://localhost:5173/")
+  //   } catch (error) {
+  //     console.log(error)
+  //   }
+  // };
 
   return (
     <div className="min-vh-100 d-flex align-items-center justify-content-center bg-light">

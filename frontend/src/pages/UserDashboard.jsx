@@ -32,7 +32,7 @@ const UserDashboard = () => {
   return (
     <div className="vh-100 d-flex flex-column">
       {/* Header Section */}
-      <header className="bg-primary text-white d-flex justify-content-between align-items-center px-4 py-3 shadow">
+      <header className="header-1 bg-primary fixed text-white d-flex justify-content-between align-items-center px-4 py-3 shadow">
         <h1 className="h5 mb-0">John Doe</h1>
         <div className="d-flex align-items-center">
           <img
