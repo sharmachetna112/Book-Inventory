@@ -6,17 +6,17 @@ import { NavLink } from "react-router-dom";
 const sidebarItems = [
   { to: "/admin-login", label: "Dashboard", icon: <FaUserAlt /> },
   { to: "/admin-login/books", label: "Books", icon: <FaBook /> },
-  { to: "/admin-login/authors", label: "Authors", icon: <FaUserTie /> },
+ /// { to: "/admin-login/authors", label: "Authors", icon: <FaUserTie /> },
   { to: "/admin-login/categories", label: "Categories", icon: <FaListAlt /> },
   { to: "/admin-login/inventory", label: "Inventory", icon: <FaBoxes /> },
   { to: "/admin-login/shopping-cart", label: "Shopping Cart", icon: <FaCartPlus /> },
   { to: "/admin-login/purchase-log", label: "Purchase Log", icon: <FaChartLine /> },
-  { to: "/admin-login/book-condition", label: "Book Condition", icon: <FaBoxes /> },
-  { to: "/admin-login/book-reviews", label: "Book Reviews", icon: <FaBook /> },
-  { to: "/admin-login/state-management", label: "State Management", icon: <FaCogs /> },
-  { to: "/admin-login/reports", label: "Reports", icon: <FaChartLine /> },
-  { to: "/admin-login/settings", label: "Settings", icon: <FaCogs /> },
-  { to: "/admin-login/logout", label: "Logout", icon: <FaSignOutAlt /> },
+//   { to: "/admin-login/book-condition", label: "Book Condition", icon: <FaBoxes /> },
+//   { to: "/admin-login/book-reviews", label: "Book Reviews", icon: <FaBook /> },
+//   { to: "/admin-login/state-management", label: "State Management", icon: <FaCogs /> },
+//   { to: "/admin-login/reports", label: "Reports", icon: <FaChartLine /> },
+//   { to: "/admin-login/settings", label: "Settings", icon: <FaCogs /> },
+//   { to: "/admin-login/logout", label: "Logout", icon: <FaSignOutAlt /> },
 ];
 
 const AdminSidebar = () => {
